@@ -1,0 +1,30 @@
+*.apk
+*.ap_
+*.dex
+*.class
+bin/
+gen/
+out/
+.gradle/
+build/
+# build/ 忽略所有的 build/ 目录下文件
+# /build 只忽略此目录下build文件，子目录的build不忽略
+local.properties
+Thumbs.db
+.DS_Store
+.classpath
+.project
+obj/
+.settings/
+*.properties
+proguard/
+*.log
+.navigation/
+*.iml
+.idea
+#..............................
+.externalNativeBuild
+google-services.json
+freeline.py
+freeline/
+freeline_project_description.json

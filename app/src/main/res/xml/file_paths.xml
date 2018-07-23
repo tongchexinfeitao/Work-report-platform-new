@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path path="" name="camera_photos" />
+    <external-path name="my_images" path="Android/data/com.example.wmz.network/files/Pictures/" />
+    <external-path name="images" path="Pictures/" />
+    <external-path name="dcim" path="DCIM/" />
+</paths>

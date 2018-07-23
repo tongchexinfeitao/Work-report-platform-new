@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/newMinuteReport"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:background="@color/huise"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:clickable="false"
+            android:gravity="right"
+            android:text="详细查询 &gt;&gt;"
+            android:textColor="@color/textColor2"
+            android:textSize="13sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/mySelectLower"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:background="@color/huise"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:text="查看指定下属汇报"
+            android:textColor="@color/textColor2"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/reportLowarNoContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/empty" />
+
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/receiveRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/newMinuteReport">
+
+        <ExpandableListView
+            android:id="@+id/receiveExpandableListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+        </ExpandableListView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <a1506a4.bwie.com.bwapp.view.widget.LowerPositionSelectView
+        android:visibility="gone"
+        android:id="@+id/mySelectLower_container"
+        android:name="a1506a4.bwie.com.bwapp.view.fragment.reportFragment.LowerPositionSelectFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mySelectLower"></a1506a4.bwie.com.bwapp.view.widget.LowerPositionSelectView>
+
+
+</RelativeLayout>

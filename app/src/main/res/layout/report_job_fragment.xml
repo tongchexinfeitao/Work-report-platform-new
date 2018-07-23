@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/dayReport"
+            android:layout_width="178dp"
+            android:layout_height="44dp"
+            android:background="@drawable/button_style05"
+            android:text="日 汇 报"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/meetingReport"
+            android:layout_width="178dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_style05"
+            android:text="例 会 汇 报"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/actionReport"
+            android:layout_width="178dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_style05"
+            android:text="活 动 汇 报"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+</RelativeLayout>

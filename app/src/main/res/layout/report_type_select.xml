@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AllBackgroud">
+
+
+    <ListView
+        android:id="@+id/type_switch_listView"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="@color/CheckboxBGColor2"
+        android:scrollbars="none"></ListView>
+
+
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#000000" />
+
+
+    <fragment
+        android:id="@+id/fra"
+        android:name="a1506a4.bwie.com.bwapp.view.fragment.reportFragment.SelectTimeReport"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>
